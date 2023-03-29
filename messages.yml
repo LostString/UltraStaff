@@ -1,0 +1,84 @@
+#
+#  ██╗░░░██╗██╗░░░░░████████╗██████╗░░█████╗░░██████╗████████╗░█████╗░███████╗███████╗
+#   ██║░░░██║██║░░░░░╚══██╔══╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔════╝██╔════╝
+#   ██║░░░██║██║░░░░░░░░██║░░░██████╔╝███████║╚█████╗░░░░██║░░░███████║█████╗░░█████╗░░
+#   ██║░░░██║██║░░░░░░░░██║░░░██╔══██╗██╔══██║░╚═══██╗░░░██║░░░██╔══██║██╔══╝░░██╔══╝░░
+#   ╚██████╔╝███████╗░░░██║░░░██║░░██║██║░░██║██████╔╝░░░██║░░░██║░░██║██║░░░░░██║░░░░░
+#   ░╚═════╝░╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝░░░░░
+#
+#Plugin created by LostString
+#UltraStaff: Version 1.0-SNAPSHOT
+messages:
+  # plugin prefix
+  prefix: "&c&lUltraStaff "
+  # success message
+  success: "&aSuccess"
+  # this message is sent when staffmode is enabled
+  staffchat_enabled: "&aStaffChat is enabled"
+  # this message is sent when staffmode is disabled
+  staffchat_disabled: "&cStaffChat is disabled"
+  # No permission message
+  no_perms: "&cYou don't have permission"
+  # this message is sent when vanish is enabled
+  vanish_enabled: "&aVanish mode enabled"
+  # this message is sent when vanish is disabled
+  vanish_disabled: "&cVanish mode disabled"
+  # this message is sent when vanish is enabled or disabled and notify all Staff from the server
+  vanished_enabled_staff: "&a%player% is in vanish"
+  vanished_disabled_staff: "&a%player% &cis not in vanish"
+  # this message is sent when fly mode is enabled
+  fly_enabled: "&aFly mode enabled"
+  # this message is sent when fly mode is disabled
+  fly_disabled: "&cFly mode disabled"
+  other_fly_enabled: "&aYour fly mode has been enabled by %player%"
+  other_fly_disabled: "&cYour fly mode has been disabled by %player%"
+  no_player: "&c%player% not found"
+  teleported: "&aYou have been teleported to %player%"
+  invsee: "&ainventory of &c%player% &awas opened"
+  staffmode_enabled: "&aStaffMode enabled"
+  staffmode_disabled: "&cStaffMode disabled"
+  staffmode_alert_enabled: "&a%player% &bis in staffmode"
+  staffmode_alert_disabled: "&a%player% &cis not in staffmode"
+  cant_froze: "&cYou cant froze this player"
+  froze: "&aYou have frozen %player%"
+  unfroze: "&aYou have unfrozen %player%"
+  frozenbystaff: "&cYou were frozen by %player%"
+  unfrozenbystaff: "&cYou were unfrozen by %player%"
+  alertfrozen: "&cYou are frozen, follow the instructions of the staff"
+  frozen_disconnect: "&c%player% &bdisconnected while frozen!"
+  froze_alert: "&a%staff% &bhave to frozen %player%"
+  unfroze_alert: "&a%staff% &bhave to unfrozen %player%"
+  randomtp: "&aYou have been teleported to &c%player%"
+  no_players_totp: "&cNo players to teleport"
+  restrictions_alert: "&cyou can't do this "
+  inmunelist: "&bList of inmune players: "
+  inmunelist_empty: "&bList fo inmune player is empty"
+  inmune_add: "&a%player% added to inmune list"
+  inmune_remove: "&a%player% removed for inmune list"
+  already_inmune: "&c%player% is already in the list"
+  no_inmune: "&c%player% in not in the list"
+  reports_of_player: "&c%player% &bhas report &c%reported% &bwith the reason: &9%reason% &8(&5%date%&8)"
+  cant_self_report: "&cYou can't report you self"
+  success_report: "&bYou report has been send"
+  no_reports: "&cNo reports found"
+  report_discarted: "&cReport discarted"
+  help_message:
+    - "&bCommands: &9(&crequired&9) &9[&coptional&9]"
+    - "&a/staffmode: &bEnable or disable staffmode"
+    - "&a/v or /vanish: &bEnable or disable vanish mode"
+    - "&a/freeze (player): &bFreeze a player"
+    - "&a/fly [player]: &bEnable or disable fly mode"
+    - "&a/s (player): &bTeleport a player to your position"
+    - "&a/invsee (player): &bOpen inventory of player"
+    - "&a/staffchat [message]: &bEnable or disable staffchat"
+    - "&a/inmune (add/remove/list): &bManage inmune list"
+  report_registered:
+    - "&c&m--------------------------"
+    - ""
+    - "&5New report registered by &b%player%"
+    - "      &9Player: &a%player%"
+    - "      &9Reported: &a%reported%"
+    - "      &9Reason: &3%reason%"
+    - "      &9Date: &7%date%"
+    - ""
+    - "&c&m--------------------------"
