@@ -7,7 +7,7 @@
 #   ░╚═════╝░╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝░░░░░
 #
 #Plugin created by LostString
-#UltraStaff: Version 1.6-SNAPSHOT
+#UltraStaff: Version 1.5-SNAPSHOT
 config:
   staffchat_format: "&7[&bStaffChat&7] &a%player_name% &7>> &9%message%"
   staffchat_format_discord: "&7[&bStaffChat&7] &0(&3Discord&0) &a%player_name% &7>> &9%message%"
