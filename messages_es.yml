@@ -62,9 +62,9 @@ messages:
   success_report: "&bTu reporte ha sido enviado"
   no_reports: "&cNo se encontraron reportes"
   report_discarted: "&cReporte descartado"
-  alerts_enabled: "&bAlerts &a&nEnabled"
-  alerts_disabled: "&bAlerts &c&nDisabled"
-  alert: "&c&lALERT&7: &b%player% has broken &9%block% &8(&3%world% &aX:&2%x%&7,&aY:&2%y%&7,&aZ:&2%z%&8)"
+  alerts_enabled: "&bAlertas &a&nActivadas"
+  alerts_disabled: "&bAlertas &c&nDesactivadas"
+  alert: "&c&lALERTA&7: &b%player% ah roto un mineral de &9%block% &8(&3%world% &aX:&2%x%&7,&aY:&2%y%&7,&aZ:&2%z%&8)"
   help_message:
     - "&bComandos: &9(&crequerido&9) &9[&copcional&9]"
     - "&a/staffmode: &bActiva o desactiva el modo personal"
