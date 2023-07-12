@@ -62,6 +62,9 @@ messages:
   success_report: "&bYou report has been send"
   no_reports: "&cNo reports found"
   report_discarted: "&cReport discarted"
+  alerts_enabled: "&bAlerts &a&nEnabled"
+  alerts_disabled: "&bAlerts &c&nDisabled"
+  alert: "&c&lALERT&7: &b%player% has broken &9%block% &8(&3%world% &aX:&2%x%&7,&aY:&2%y%&7,&aZ:&2%z%&8)"
   help_message:
     - "&bCommands: &9(&crequired&9) &9[&coptional&9]"
     - "&a/staffmode: &bEnable or disable staffmode"
