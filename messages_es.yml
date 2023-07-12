@@ -74,7 +74,7 @@ messages:
     - "&a/s (jugador): &bTeletransporta a un jugador a tu posición"
     - "&a/invsee (jugador): &bAbre el inventario de un jugador"
     - "&a/staffchat [mensaje]: &bActiva o desactiva el chat del personal"
-    - "&a/inmune (añadir/eliminar/listar): &bAdministra la lista de jugadores inmunes"
+    - "&a/inmune (add/remove/list): &bAdministra la lista de jugadores inmunes"
   report_registered:
     - "&c&m--------------------------"
     - ""
