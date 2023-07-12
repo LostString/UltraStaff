@@ -1,0 +1,155 @@
+#
+#  ██╗░░░██╗██╗░░░░░████████╗██████╗░░█████╗░░██████╗████████╗░█████╗░███████╗███████╗
+#   ██║░░░██║██║░░░░░╚══██╔══╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔════╝██╔════╝
+#   ██║░░░██║██║░░░░░░░░██║░░░██████╔╝███████║╚█████╗░░░░██║░░░███████║█████╗░░█████╗░░
+#   ██║░░░██║██║░░░░░░░░██║░░░██╔══██╗██╔══██║░╚═══██╗░░░██║░░░██╔══██║██╔══╝░░██╔══╝░░
+#   ╚██████╔╝███████╗░░░██║░░░██║░░██║██║░░██║██████╔╝░░░██║░░░██║░░██║██║░░░░░██║░░░░░
+#   ░╚═════╝░╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝░░░░░
+#
+#Plugin created by LostString
+#UltraStaff: Version 1.5-SNAPSHOT
+config:
+  staffchat_format: "&7[&bStaffChat&7] &a%player_name% &7>> &9%message%"
+  staffchat_format_discord: "&7[&bStaffChat&7] &0(&3Discord&0) &a%player_name% &7>> &9%message%"
+  execute_command_on_disconect: true
+  frozen_disconnect_command: "ban %player% Refuse SS"
+  alerts:
+    disabled_worlds:
+      - "mines"
+      - "spawn"
+  vanish_restrictions: true
+  report_system: true
+  staffmode:
+    restrictions: true
+    items:
+      invsee:
+        enabled: true
+        item: "CHEST"
+        data: 0
+        name: "&bVer Inventario"
+        slot: 0
+        lore:
+          - "&bVer inventario del jugador"
+      freeze:
+        enabled: true
+        item: "ICE"
+        data: 0
+        name: "&bCongelar"
+        slot: 1
+        lore:
+          - "&aCongelar a un jugador"
+      world_edit:
+        enabled: true
+        item: "WOOD_AXE"
+        data: 0
+        name: "&cWorld edit"
+        slot: 2
+        lore:
+          - "&cHerramienta de WorldEdit"
+      navigator:
+        enabled: true
+        item: "COMPASS"
+        data: 0
+        name: "&bNavegador"
+        slot: 3
+        lore:
+          - ""
+      randomtp:
+        enabled: true
+        item: "ENDER_PEARL"
+        data: 0
+        name: "&9Teleportación Aleatoria"
+        slot: 5
+        lore:
+          - "&cTeletransportarse a un jugador aleatorio"
+      fly:
+        enabled: true
+        item: "FEATHER"
+        data: 0
+        name: "&3Volar"
+        slot: 6
+        lore:
+          - "&aE&aActivar &bo &cDesactivar &bvuelo"
+      vanish:
+        enabled: true
+        item: "INK_SACK"
+        data: 10
+        name: "&5Invisibilidad"
+        slot: 7
+        lore:
+          - "&aActivar &bo &cDesactivar &binvisibilidad"
+  immune_to_freeze:
+    - "LostString"
+  discord:
+    enabled: false
+    token: "YourBotToken"
+    status: "ONLINE"
+    activity:
+      name: "Minecraft"
+      ## types: DEFAULT, WATCHING, COMPETING, LISTENING
+      type: "DEFAULT"
+    staffchat: "ID_DEL_CANAL"
+    staffchat_discord_format: "**STAFF** %player% >> %message%"
+    logs_channel: "ID_DEL_CANAL"
+    reports_channel: "ID_DEL_CANAL"
+    send_logs:
+      commands: true
+      join: true
+      leave: true
+      report: true
+    Report:
+      title: "Nuevo Reporte"
+      description: ""
+      color: "#FFFFF"
+      footer:
+        text: "Traducido por: Mangy"
+        icon_url: "https://images-ext-2.discordapp.net/external/iSa8LgfhP5WXg3eMNgPpT3Dfy0zGuGsuC0wBYeh0cQM/https/cdn.discordapp.com/avatars/1087081180312109107/a499774dcbd4c15d7a735da8da505cce.png"
+      fields:
+        - name: "Jugador:"
+          value: "%player%"
+          inline: false
+        - name: "Reportado:"
+          value: "%reported%"
+          inline: false
+        - name: "Razón:"
+          value: "%reason%"
+          inline: false
+        - name: "Fecha:"
+          value: "%date%"
+          inline: false
+    Joinlog:
+      title: "Registro de logs"
+      description: ""
+      color: "#FFFFF"
+      footer:
+        text: "Traducido por: Mangy"
+        icon_url: "https://images-ext-2.discordapp.net/external/iSa8LgfhP5WXg3eMNgPpT3Dfy0zGuGsuC0wBYeh0cQM/https/cdn.discordapp.com/avatars/1087081180312109107/a499774dcbd4c15d7a735da8da505cce.png"
+      fields:
+        - name: "Log:"
+          value: "%player% ha ingresado al servidor"
+          inline: false
+    Leavelog:
+      title: "Logs de salidas"
+      description: ""
+      color: "#FFFFF"
+      footer:
+        text: "Traducido por: Mangy"
+        icon_url: "https://images-ext-2.discordapp.net/external/iSa8LgfhP5WXg3eMNgPpT3Dfy0zGuGsuC0wBYeh0cQM/https/cdn.discordapp.com/avatars/1087081180312109107/a499774dcbd4c15d7a735da8da505cce.png"
+      fields:
+        - name: "Log:"
+          value: "%player% ha salido del servidor"
+          inline: false
+    Commandlog:
+      title: "Log de comandos"
+      description: ""
+      color: "#FFFFF"
+      footer:
+        text: "Traducido por: Mangy"
+        icon_url: "https://images-ext-2.discordapp.net/external/iSa8LgfhP5WXg3eMNgPpT3Dfy0zGuGsuC0wBYeh0cQM/https/cdn.discordapp.com/avatars/1087081180312109107/a499774dcbd4c15d7a735da8da505cce.png"
+      fields:
+        - name: "Log:"
+          value: "%player% ha utilizado un comando"
+          inline: false
+        - name: "Command:"
+          value: "%command%"
+          inline: false
