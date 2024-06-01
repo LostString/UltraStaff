@@ -7,7 +7,7 @@
 #   ░╚═════╝░╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝░░░░░
 #
 #Plugin created by LostString
-#UltraStaff: Version 1.5-SNAPSHOT
+#UltraStaff: Version 1.6-BETA
 messages:
   # plugin prefix
   prefix: "&c&lUltraStaff "
@@ -20,12 +20,10 @@ messages:
   # No permission message
   no_perms: "&cYou don't have permission"
   # this message is sent when vanish is enabled
+  vanish_actionbar: "&aYou are in &lVANISH"
   vanish_enabled: "&aVanish mode enabled"
   # this message is sent when vanish is disabled
   vanish_disabled: "&cVanish mode disabled"
-  # this message is sent when vanish is enabled or disabled and notify all Staff from the server
-  vanished_enabled_staff: "&a%player% is in vanish"
-  vanished_disabled_staff: "&a%player% &cis not in vanish"
   # this message is sent when fly mode is enabled
   fly_enabled: "&aFly mode enabled"
   # this message is sent when fly mode is disabled
@@ -35,28 +33,24 @@ messages:
   no_player: "&c%player% not found"
   teleported: "&aYou have been teleported to %player%"
   invsee: "&ainventory of &c%player% &awas opened"
+  chat_mute: "&aChat was muted by &c%player%"
+  chat_unmute: "&aChat was unmuted by &c%player%"
+  chat_muted: "&cChat are muted."
+  chat_clear: "&aChat was cleared by &c%player%"
   staffmode_enabled: "&aStaffMode enabled"
   staffmode_disabled: "&cStaffMode disabled"
-  staffmode_alert_enabled: "&a%player% &bis in staffmode"
-  staffmode_alert_disabled: "&a%player% &cis not in staffmode"
-  cant_froze: "&cYou cant froze this player"
   froze: "&aYou have frozen %player%"
   unfroze: "&aYou have unfrozen %player%"
   frozenbystaff: "&cYou were frozen by %player%"
   unfrozenbystaff: "&cYou were unfrozen by %player%"
-  alertfrozen: "&cYou are frozen, follow the instructions of the staff"
+  alertfrozen:
+    - "&cYou are frozen, follow the instructions of the staff"
   frozen_disconnect: "&c%player% &bdisconnected while frozen!"
-  froze_alert: "&a%staff% &bhave to frozen %player%"
-  unfroze_alert: "&a%staff% &bhave to unfrozen %player%"
   randomtp: "&aYou have been teleported to &c%player%"
   no_players_totp: "&cNo players to teleport"
-  restrictions_alert: "&cyou can't do this "
-  inmunelist: "&bList of inmune players: "
-  inmunelist_empty: "&bList fo inmune player is empty"
-  inmune_add: "&a%player% added to inmune list"
-  inmune_remove: "&a%player% removed for inmune list"
-  already_inmune: "&c%player% is already in the list"
-  no_inmune: "&c%player% in not in the list"
+  stafflist_tab: "------------------------------"
+  stafflist_message: "&8> &7%staff% => StaffMode: %staffmode%, Vanish: %vanish%, StaffChat: %staffchat%"
+  stafflist_asd: "---------------------------"
   reports_of_player: "&c%player% &bhas report &c%reported% &bwith the reason: &9%reason% &8(&5%date%&8)"
   cant_self_report: "&cYou can't report you self"
   success_report: "&bYou report has been send"
@@ -74,7 +68,6 @@ messages:
     - "&a/s (player): &bTeleport a player to your position"
     - "&a/invsee (player): &bOpen inventory of player"
     - "&a/staffchat [message]: &bEnable or disable staffchat"
-    - "&a/inmune (add/remove/list): &bManage inmune list"
   report_registered:
     - "&c&m--------------------------"
     - ""
