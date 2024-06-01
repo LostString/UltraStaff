@@ -7,81 +7,71 @@
 #   ░╚═════╝░╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝░░░░░
 #
 #Plugin created by LostString
-#UltraStaff: Version 1.5-SNAPSHOT
+#UltraStaff: Version 1.6-BETA
 messages:
-  # prefijo del plugin
+  # plugin prefix
   prefix: "&c&lUltraStaff "
-  # Mensaje de éxito
-  success: "&aÉxito"
-  # Este mensaje se envía cuando se activa el modo StaffChat
-  staffchat_enabled: "&aEl modo StaffChat está activado"
-  # Este mensaje se envía cuando se desactiva el modo StaffChat
-  staffchat_disabled: "&cEl modo StaffChat está desactivado"
-  # Mensaje de permiso denegado
+  # success message
+  success: "&aExito"
+  # this message is sent when staffmode is enabled
+  staffchat_enabled: "&aStaffChat activado"
+  # this message is sent when staffmode is disabled
+  staffchat_disabled: "&cStaffChat desactivado"
+  # No permission message
   no_perms: "&cNo tienes permisos"
-  # Este mensaje se envía cuando se activa el modo de invisibilidad (Vanish)
-  vanish_enabled: "&aModo de invisibilidad activado"
-  # Este mensaje se envía cuando se desactiva el modo de invisibilidad (Vanish)
-  vanish_disabled: "&cModo de invisibilidad desactivado"
-  # Este mensaje se envía cuando se activa o desactiva el modo de invisibilidad (Vanish) y notifica a todo el personal del servidor
-  vanished_enabled_staff: "&a%player% está en modo de invisibilidad"
-  vanished_disabled_staff: "&a%player% &cno está en modo de invisibilidad"
-  # Este mensaje se envía cuando se activa el modo de vuelo (Fly)
-  fly_enabled: "&aModo de vuelo activado"
-  # Este mensaje se envía cuando se desactiva el modo de vuelo (Fly)
-  fly_disabled: "&cModo de vuelo desactivado"
-  other_fly_enabled: "&aTu modo de vuelo ha sido activado por %player%"
-  other_fly_disabled: "&cTu modo de vuelo ha sido desactivado por %player%"
-  no_player: "&cNo se encontró a %player%"
-  teleported: "&aHas sido teletransportado a %player%"
-  invsee: "&aSe ha abierto el inventario de %player%"
-  staffmode_enabled: "&aModo de personal activado"
-  staffmode_disabled: "&cModo de personal desactivado"
-  staffmode_alert_enabled: "&a%player% está en modo de personal"
-  staffmode_alert_disabled: "&a%player% &cno está en modo de personal"
-  cant_froze: "&cNo puedes congelar a este jugador"
-  froze: "&aHas congelado a %player%"
-  unfroze: "&aHas descongelado a %player%"
-  frozenbystaff: "&cFuiste congelado por %player%"
+  # this message is sent when vanish is enabled
+  vanish_actionbar: "&aEstás en &lVANISH"
+  vanish_enabled: "&aVanish activado"
+  # this message is sent when vanish is disabled
+  vanish_disabled: "&cVanish desactivado"
+  # this message is sent when fly mode is enabled
+  fly_enabled: "&aFly activado"
+  # this message is sent when fly mode is disabled
+  fly_disabled: "&cFly desactivado"
+  other_fly_enabled: "&a%player% &bactivó tu modo fly"
+  other_fly_disabled: "&a%player% &bdesactivó tu modo fly"
+  no_player: "&cel jugador &a%player% &cno está online"
+  teleported: "&aTeletransportado a %player%"
+  invsee: "&aHas abierto el inventario de &c%player%"
+  chat_mute: "&aEl chat fue desactivado por &c%player%"
+  chat_unmute: "&aEl chat fue activado por &c%player%"
+  chat_muted: "&cEl chat está desactivado."
+  chat_clear: "&aEl chat fue eliminado por &c%player%"
+  staffmode_enabled: "&aStaffMode activado"
+  staffmode_disabled: "&cStaffMode desactivado"
+  froze: "&aCongelaste a %player%"
+  unfroze: "&aDescongelaste a %player%"
+  frozenbystaff: "&cFuiste congelado po %player%"
   unfrozenbystaff: "&cFuiste descongelado por %player%"
-  alertfrozen: "&cEstás congelado, sigue las instrucciones del personal"
-  frozen_disconnect: "&c%player% &bse desconectó mientras estaba congelado"
-  froze_alert: "&a%staff% &bha congelado a %player%"
-  unfroze_alert: "&a%staff% &bha descongelado a %player%"
-  randomtp: "&aHas sido teletransportado a &c%player%"
-  no_players_totp: "&cNo hay jugadores para teletransportar"
-  restrictions_alert: "&cNo puedes hacer esto"
-  inmunelist: "&bLista de jugadores inmunes: "
-  inmunelist_empty: "&bLa lista de jugadores inmunes está vacía"
-  inmune_add: "&a%player% agregado a la lista de inmunidad"
-  inmune_remove: "&a%player% eliminado de la lista de inmunidad"
-  already_inmune: "&c%player% ya está en la lista"
-  no_inmune: "&c%player% no está en la lista"
-  reports_of_player: "&c%player% &btiene un reporte de &c%reported% &bcon el motivo: &9%reason% &8(&5%date%&8)"
-  cant_self_report: "&cNo puedes reportarte a ti mismo"
-  success_report: "&bTu reporte ha sido enviado"
+  alertfrozen:
+    - "&cEstás congelado, sigue las instrucciones del staff"
+  frozen_disconnect: "&c%player% &bse desconectó cuando estaba congelado!"
+  randomtp: "&aFuiste teletransportado hacia &c%player%"
+  no_players_totp: "&cNo hay jugadores para deletransportarse"
+  reports_of_player: "&c%player% &breportó a &c%reported% &bcon la razón: &9%reason% &8(&5%date%&8)"
+  cant_self_report: "&cNo te puedes reportar a ti mismo"
+  success_report: "&bTu reporte fue enviado"
   no_reports: "&cNo se encontraron reportes"
   report_discarted: "&cReporte descartado"
   alerts_enabled: "&bAlertas &a&nActivadas"
   alerts_disabled: "&bAlertas &c&nDesactivadas"
-  alert: "&c&lALERTA&7: &b%player% ah roto un mineral de &9%block% &8(&3%world% &aX:&2%x%&7,&aY:&2%y%&7,&aZ:&2%z%&8)"
+  alert: "&c&lALERT&7: &b%player% rimpió &9%block% &8(&3%world% &aX:&2%x%&7,&aY:&2%y%&7,&aZ:&2%z%&8)"
   help_message:
-    - "&bComandos: &9(&crequerido&9) &9[&copcional&9]"
-    - "&a/staffmode: &bActiva o desactiva el modo personal"
-    - "&a/v o /vanish: &bActiva o desactiva el modo de invisibilidad"
-    - "&a/freeze (jugador): &bCongela a un jugador"
-    - "&a/fly [jugador]: &bActiva o desactiva el modo de vuelo"
-    - "&a/s (jugador): &bTeletransporta a un jugador a tu posición"
-    - "&a/invsee (jugador): &bAbre el inventario de un jugador"
-    - "&a/staffchat [mensaje]: &bActiva o desactiva el chat del personal"
-    - "&a/inmune (add/remove/list): &bAdministra la lista de jugadores inmunes"
+    - "&bCommands: &9(&crequired&9) &9[&coptional&9]"
+    - "&a/staffmode: &bEnable or disable staffmode"
+    - "&a/v or /vanish: &bEnable or disable vanish mode"
+    - "&a/freeze (player): &bFreeze a player"
+    - "&a/fly [player]: &bEnable or disable fly mode"
+    - "&a/s (player): &bTeleport a player to your position"
+    - "&a/invsee (player): &bOpen inventory of player"
+    - "&a/staffchat [message]: &bEnable or disable staffchat"
   report_registered:
     - "&c&m--------------------------"
     - ""
-    - "&5Nuevo reporte registrado por &b%player%"
+    - "&5Nuevo reporte por &b%player%"
     - "      &9Jugador: &a%player%"
     - "      &9Reportado: &a%reported%"
-    - "      &9Motivo: &3%reason%"
+    - "      &9Razón: &3%reason%"
     - "      &9Fecha: &7%date%"
     - ""
     - "&c&m--------------------------"
